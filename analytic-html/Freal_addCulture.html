@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from demo.dashboardpack.com/analytic-html/Layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jun 2024 14:34:46 GMT -->
-
 <head>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Analytic</title>
-    <link rel="icon" href="img/mini_logo.png" type="image/png">
+    <title>Freal</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
 
     <link rel="stylesheet" href="css/bootstrap1.min.css" />
 
@@ -24,6 +22,7 @@
     <link rel="stylesheet" href="vendors/tagsinput/tagsinput.css" />
 
     <link rel="stylesheet" href="vendors/datepicker/date-picker.css" />
+    <link rel="stylesheet" href="vendors/vectormap-home/vectormap-2.0.2.css" />
 
     <link rel="stylesheet" href="vendors/scroll/scrollable.css" />
 
@@ -47,13 +46,14 @@
 
 
     <nav class="sidebar">
-        <div class="logo d-flex justify-content-between">
-            <a class="large_logo" href="index.html"><img src="img/logo.png" alt></a>
-            <a class="small_logo" href="index.html"><img src="img/mini_logo.png" alt></a>
+        <div class="logo d-flex justify-content-center align-items-center">
+            <a class="large_logo" href="index.html"><img src="img/logo.png" alt="Large Logo"></a>
+            <a class="small_logo d-none" href="index.html"><img src="img/mini_logo.png" alt="Small Logo"></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
         </div>
+
         <ul id="sidebar_menu">
             <li>
                 <a href="index.html" aria-expanded="false">
@@ -85,6 +85,81 @@
                     </div>
                 </a>
             </li>
+
+            <!-- FREAL start -->
+            <h4 class="menu-text"><span>ADMIN</span> <i class="fas fa-ellipsis-h"></i> </h4>
+            <li class>
+                <a class="has-arrow" href="#" aria-expanded="false">
+                    <div class="nav_icon_small">
+                        <img src="img/menu-icon/4.svg" alt>
+                    </div>
+                    <div class="nav_title">
+                        <span>Culture</span>
+                    </div>
+                </a>
+                <ul>
+                    <li><a href="Freal_index_culture_category.html">Culture Category</a></li>
+                    <li><a href="Freal_index_culture.html">Culture</a></li>
+                </ul>
+            </li>
+            <li class>
+            <li class>
+                <a class="has-arrow" href="#" aria-expanded="false">
+                    <div class="nav_icon_small">
+                        <img src="img/menu-icon/8.svg" alt>
+                    </div>
+                    <div class="nav_title">
+                        <span>Foods</span>
+                    </div>
+                </a>
+                <ul>
+                    <li><a href="Freal_index_food_category.html">Food Category</a></li>
+                    <li><a href="Freal_index_food_featured.html">Food Featured</a></li>
+                    <li><a href="Freal_index_food.html">Food</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="Freal_index_location.html" aria-expanded="false">
+                    <div class="nav_icon_small">
+                        <img src="img/menu-icon/2.svg" alt>
+                    </div>
+                    <div class="nav_title">
+                        <span>Locations</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="Freal_index_event.html" aria-expanded="false">
+                    <div class="nav_icon_small">
+                        <img src="img/menu-icon/2.svg" alt>
+                    </div>
+                    <div class="nav_title">
+                        <span>Events</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="Freal_index_post.html" aria-expanded="false">
+                    <div class="nav_icon_small">
+                        <img src="img/menu-icon/2.svg" alt>
+                    </div>
+                    <div class="nav_title">
+                        <span>Posts</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="Freal_index_user.html" aria-expanded="false">
+                    <div class="nav_icon_small">
+                        <img src="img/menu-icon/2.svg" alt>
+                    </div>
+                    <div class="nav_title">
+                        <span>Users</span>
+                    </div>
+                </a>
+            </li>
+            <!-- FREAL end -->
+
             <h4 class="menu-text"><span>CUSTOM</span> <i class="fas fa-ellipsis-h"></i> </h4>
             <li class>
                 <a class="has-arrow" href="#" aria-expanded="false">
@@ -370,7 +445,6 @@
     </nav>
 
     <section class="main_content dashboard_part large_header_bg">
-
         <div class="container-fluid g-0">
             <div class="row">
                 <div class="col-lg-12 p-0 ">
@@ -515,254 +589,53 @@
                 </div>
             </div>
         </div>
+        <div class="main_content_iner overly_inner ">
+            <div class="container-fluid p-0 ">
 
-        <div class="main_content_iner ">
-            <div class="container-fluid p-0 sm_padding_15px">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="white_card card_height_100 mb_30">
-                            <div class="white_card_header">
-                                <div class="box_header m-0">
-                                    <div class="main-title">
-                                        <h3 class="m-0">Basic Form</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="col-lg-12">
+                            <div class="white_card card_height_100 mb_30">
+                                <div class="white_card_header">
+                                    <div class="box_header m-0">
+                                        <div class="main-title">
+                                            <h3 class="m-0">Add Category</h3>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="white_card_body">
-                                <h6 class="card-subtitle mb-2">Here’s a quick example to demonstrate Bootstrap’s form
-                                    styles. Keep reading for documentation on required classes, form layout, and more.
-                                </h6>
-                                <form>
-                                    <div class="mb-3">
-                                        <label class="form-label" for="exampleInputEmail1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1"
-                                            aria-describedby="emailHelp" placeholder="Enter email">
-                                        <small id="emailHelp" class="form-text text-muted">We'll never share your email
-                                            with anyone else.</small>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label" for="exampleInputPassword1">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Password">
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                        <label class="form-label form-check-label" for="exampleCheck1">Check me
-                                            out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="white_card card_height_100 mb_30">
-                            <div class="white_card_header">
-                                <div class="box_header m-0">
-                                    <div class="main-title">
-                                        <h3 class="m-0">Horizontal form</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="white_card_body">
-                                <h6 class="card-subtitle mb-2">Create horizontal forms with the grid by adding the <code
-                                        class="highlighter-rouge">.row</code> class to form groups and using the <code
-                                        class="highlighter-rouge">.col-*-*</code> classes to specify the width of your
-                                    labels and controls. Be sure to add <code
-                                        class="highlighter-rouge">.col-form-label</code> to your <code
-                                        class="highlighter-rouge">&lt;label&gt;</code>s as well so they’re vertically
-                                    centered with their associated form controls.</h6>
-                                <form>
-                                    <div class="row mb-3">
-                                        <label for="inputEmail3"
-                                            class="form-label col-sm-4 col-form-label">Email</label>
-                                        <div class="col-sm-8">
-                                            <input type="email" class="form-label form-control" id="inputEmail3"
-                                                placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <label for="inputPassword3"
-                                            class="form-label col-sm-4 col-form-label">Password</label>
-                                        <div class="col-sm-8">
-                                            <input type="password" class="form-control" id="inputPassword3"
-                                                placeholder="Password">
-                                        </div>
-                                    </div>
-                                    <fieldset class="mb-3">
-                                        <div class="row">
-                                            <div class="col-form-label col-sm-4 pt-0">Radios</div>
-                                            <div class="col-sm-8">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                        id="gridRadios1" value="option1" checked>
-                                                    <label class="form-label form-check-label" for="gridRadios1">
-                                                        First radio
-                                                    </label>
+                                <div class="white_card_body">
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="row mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="inputLocation">Location</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option>...</option>
+                                                    </select>
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                        id="gridRadios2" value="option2">
-                                                    <label class="form-label form-check-label" for="gridRadios2">
-                                                        Second radio
-                                                    </label>
-                                                </div>
-                                                <div class="form-check disabled">
-                                                    <input class="form-check-input" type="radio" name="gridRadios"
-                                                        id="gridRadios3" value="option3" disabled>
-                                                    <label class="form-label form-check-label" for="gridRadios3">
-                                                        Third disabled radio
-                                                    </label>
+                                                <div class="col-md-6">
+                                                    <label class="form-label" for="inputCultureCategory">Culture
+                                                        Category</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+                                                        <option>...</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </fieldset>
-                                    <div class=" row">
-                                        <div class="col-sm-4">Checkbox</div>
-                                        <div class="col-sm-8">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck1">
-                                                <label class="form-label form-check-label" for="gridCheck1">
-                                                    Example checkbox
-                                                </label>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="inputTitle">Title</label>
+                                                <input type="text" class="form-control" id="inputTitle"
+                                                    placeholder="Title">
                                             </div>
-                                        </div>
+                                            <div class="mb-3" id="summernote"></div>
+
+                                            <div class="d-flex justify-content-center mt-5">
+                                                <button type="submit" class="btn btn-primary" style=" padding: 10px
+                                                    20px;">Submit</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class=" row">
-                                        <div class="col-sm-10">
-                                            <button type="submit" class="btn btn-primary">Sign in</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="white_card card_height_100 mb_30">
-                            <div class="white_card_header">
-                                <div class="box_header m-0">
-                                    <div class="main-title">
-                                        <h3 class="m-0">Inline Form</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="white_card_body">
-                                <h6 class="card-subtitle mb-2">Use the <code
-                                        class="highlighter-rouge">grid and utilities</code> class to display a series of
-                                    labels, form controls, and buttons on a single horizontal row. Form controls within
-                                    inline forms vary slightly from their default states.</h6>
-                                <h5 class="card-title font-16">Inline Form</h5>
-                                <form class="row g-3">
-                                    <div class="col-auto">
-                                        <label for="staticEmail2" class="form-label visually-hidden">Email</label>
-                                        <input type="text" readonly class="form-control-plaintext" id="staticEmail2"
-                                            value="email@example.com">
-                                    </div>
-                                    <div class="col-auto">
-                                        <label for="inputPassword2" class="form-label visually-hidden">Password</label>
-                                        <input type="password" class="form-control" id="inputPassword2"
-                                            placeholder="Password">
-                                    </div>
-                                    <div class="col-auto">
-                                        <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-                                    </div>
-                                </form>
-                                <h5 class="card-title font-16 mt-3">Auto-sizing Form</h5>
-                                <form>
-                                    <div class="row align-items-center">
-                                        <div class="col-auto">
-                                            <label class="form-label visually-hidden" for="inlineFormInput">Name</label>
-                                            <input type="text" class="form-control mb-2" id="inlineFormInput"
-                                                placeholder="Jane Doe">
-                                        </div>
-                                        <div class="col-auto">
-                                            <label class="form-label visually-hidden"
-                                                for="inlineFormInputGroup">Username</label>
-                                            <div class="input-group mb-2">
-                                                <div class="input-group-text">
-                                                    <div class>@</div>
-                                                </div>
-                                                <input type="text" class="form-control" id="inlineFormInputGroup"
-                                                    placeholder="Username">
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-                                                <label class="form-label form-check-label" for="autoSizingCheck">
-                                                    Remember me
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="white_card card_height_100 mb_30">
-                            <div class="white_card_header">
-                                <div class="box_header m-0">
-                                    <div class="main-title">
-                                        <h3 class="m-0">Form row</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="white_card_body">
-                                <div class="card-body">
-                                    <form>
-                                        <div class="row mb-3">
-                                            <div class="col-md-6">
-                                                <label class="form-label" for="inputEmail4">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4"
-                                                    placeholder="Email">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label class="form-label" for="inputPassword4">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4"
-                                                    placeholder="Password">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="inputAddress">Address</label>
-                                            <input type="text" class="form-control" id="inputAddress"
-                                                placeholder="1234 Main St">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label" for="inputAddress2">Address 2</label>
-                                            <input type="text" class="form-control" id="inputAddress2"
-                                                placeholder="Apartment, studio, or floor">
-                                        </div>
-                                        <div class="row mb-3">
-                                            <div class=" col-md-6">
-                                                <label class="form-label" for="inputCity">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
-                                            <div class=" col-md-4">
-                                                <label class="form-label" for="inputState">State</label>
-                                                <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>...</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label class="form-label" for="inputZip">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                        </div>
-                                        <div class="mb-3">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-label form-check-label" for="gridCheck">
-                                                    Check me out
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Sign in</button>
-                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -776,8 +649,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer_iner text-center">
-                            <p>2020 © Influence - Designed by <a href="#"> <i class="ti-heart"></i> </a><a href="#">
-                                    DashboardPack</a></p>
+                            <p>@Freal Admin</a></p>
                         </div>
                     </div>
                 </div>
@@ -899,6 +771,7 @@
             </div>
         </div>
     </div>
+
     <div id="back-top" style="display: none;">
         <a title="Go to Top" href="#">
             <i class="ti-angle-up"></i>
@@ -932,7 +805,12 @@
     <script src="vendors/datatable/js/vfs_fonts.js"></script>
     <script src="vendors/datatable/js/buttons.html5.min.js"></script>
     <script src="vendors/datatable/js/buttons.print.min.js"></script>
+
+    <script src="vendors/datepicker/datepicker.js"></script>
+    <script src="vendors/datepicker/datepicker.en.js"></script>
+    <script src="vendors/datepicker/datepicker.custom.js"></script>
     <script src="js/chart.min.js"></script>
+    <script src="vendors/chartjs/roundedBar.min.js"></script>
 
     <script src="vendors/progressbar/jquery.barfiller.js"></script>
 
@@ -943,15 +821,21 @@
 
     <script src="vendors/scroll/perfect-scrollbar.min.js"></script>
     <script src="vendors/scroll/scrollable-custom.js"></script>
+
+    <script src="vendors/vectormap-home/vectormap-2.0.2.min.js"></script>
+    <script src="vendors/vectormap-home/vectormap-world-mill-en.js"></script>
+
+    <script src="vendors/apex_chart/apex-chart2.js"></script>
+    <script src="vendors/apex_chart/apex_dashboard.js"></script>
+    <script src="vendors/echart/echarts.min.js"></script>
     <script src="vendors/chart_am/core.js"></script>
     <script src="vendors/chart_am/charts.js"></script>
     <script src="vendors/chart_am/animated.js"></script>
     <script src="vendors/chart_am/kelly.js"></script>
     <script src="vendors/chart_am/chart-custom.js"></script>
 
+    <script src="js/dashboard_init.js"></script>
     <script src="js/custom.js"></script>
 </body>
-
-<!-- Mirrored from demo.dashboardpack.com/analytic-html/Layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 Jun 2024 14:34:46 GMT -->
 
 </html>
